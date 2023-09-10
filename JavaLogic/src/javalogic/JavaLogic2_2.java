@@ -10,7 +10,9 @@ public class JavaLogic2_2 {
 		System.out.println("xの値を入力してください。");
 		int x = sc.nextInt();
 		
+		//正の数/負の数区分
 		if(x>=0) {
+			//2で割ったとき、残りが0なら偶数、1なら奇数
 			if(x%2==0) {
 				System.out.println("正の数の偶数");
 			}
