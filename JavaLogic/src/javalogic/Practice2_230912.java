@@ -11,6 +11,7 @@ public class Practice2_230912 {
 		int row_tot = 0;
 		
 		for(int i=0; i<arr.length; i++) {
+			//if
 			for(int j=0; j<arr[i].length; j++) {
 				
 				if(i<arr.length-1 && j<arr[i].length-1) {
