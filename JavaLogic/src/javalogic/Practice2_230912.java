@@ -11,18 +11,18 @@ public class Practice2_230912 {
 		int row_tot = 0;
 		
 		for(int i=0; i<arr.length; i++) {
-			//if
-			for(int j=0; j<arr[i].length; j++) {
-				
-				if(i<arr.length-1 && j<arr[i].length-1) {
-					arr[i][j] = a;
-					a++;
-					
-					col_tot += arr[i][j];
+			if(i<arr.length-1) {
+				for(int j=0; j<arr[i].length; j++) {
+					if(j<arr[i].length-1) {
+						arr[i][j] = a;
+						a++;
+						
+						col_tot += arr[i][j];
+					}
 				}
+				arr[i][4] = col_tot;
+				col_tot = 0;
 			}
-			arr[i][4] = col_tot;
-			col_tot = 0;
 		}
 		
 		for(int i=0; i<arr.length; i++) {
