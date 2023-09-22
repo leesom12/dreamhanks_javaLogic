@@ -11,7 +11,7 @@ public class JavaLogic9 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("数字を入力してください");
 		int number = sc.nextInt();
-		int a = number;
+
 		String result = "";
 		
 		while(number>0) {
@@ -19,7 +19,6 @@ public class JavaLogic9 {
     		number /=2;
 		}
 		
-		System.out.println("10進数:  "+a);
 		System.out.println("２進数: "+result);
 
 	}

@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class JavaLogic8 {
 
 	public static void main(String[] args) {
-		//問題
 		//指定した金額を100円玉と10円玉と５円玉と１円玉だけで、できるだけ少ない枚数で支払いたい。
 		//金額を入力するとそれぞれの枚数を計算して表示するプログラムを作りなさい。
 		
