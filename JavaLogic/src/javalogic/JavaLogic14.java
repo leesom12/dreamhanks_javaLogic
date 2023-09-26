@@ -25,6 +25,7 @@ public class JavaLogic14 {
 					System.out.println("2つの整数を入力してください");
 					check = 1;
 				}
+				
 				int max = 0;
 				for(int i=1; i<=num1 && i<=num2; i++) {
 					if(num1%i == 0 && num2%i == 0) {

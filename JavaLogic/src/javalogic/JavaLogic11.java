@@ -12,8 +12,8 @@ public class JavaLogic11 {
 		
 		BufferedReader br;
 		StringTokenizer st;
-		int check = 0;
-		int array [] = new int[4];
+		int check = 0;				//エラーが発生した時チェックするための値
+		int array [] = new int[4];	//4つの数字を入力する配列
 		
 		do{
 			br =  new BufferedReader(new InputStreamReader(System.in));
@@ -21,14 +21,14 @@ public class JavaLogic11 {
 			
 			try {
 				for(int i=0; i<array.length; i++) {
-					array[i] = Integer.parseInt(st.nextToken());
+					array[i] = Integer.parseInt(st.nextToken());	//4回繰り返し配列に数字を入れる
 				}
 				
 				for(int i=0; i<array.length; i++) {
-					for(int j=i+1; j<array.length; j++) {
+					for(int j=i+1; j<array.length; j++) {		//i番目とこれより後ろの配列を比較
 						if(array[i] > array[j]) {
 							int a = array[i];
-							array[i] = array[j];
+							array[i] = array[j];	//前の数が後の数より大きい場合は順番を変える
 							array[j] = a;
 						}
 					}
@@ -37,14 +37,14 @@ public class JavaLogic11 {
 				System.out.println("３番目に大きい値:   "+array[2]);
 				
 			}catch(NumberFormatException e) {
-				System.out.println("４つの整数を入力してください");
-				check = 1;
+				System.out.println("４つの整数を入力してください");	
+				check = 1;			//数字なくて文字が入って来た時再入力してもらえるようにcheckを１に変える
 			}catch(NoSuchElementException e) {
 				System.out.println("４つの整数を入力してください");
-				check = 1;
+				check = 1;			//２つより少ない数が入って来た時再入力してもらえるようにcheckを１に変える
 			}
 			
-		}while(check == 1);
+		}while(check == 1);		//checkが１なら反復
 		
 
 	}
