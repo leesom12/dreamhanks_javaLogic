@@ -9,9 +9,7 @@ public class JavaLogic16 {
 		for(int a=1; a<=100; a++) {
 			for(int b=a+1; b<=100; b++) {
 				for(int c=1; c<=100; c++) {
-					if(c*c == (a*a)+(b*b)) {
-						System.out.println(a+" "+b+" "+c);
-					}
+					if(c*c == (a*a)+(b*b)) System.out.println(a+" "+b+" "+c);
 				}
 			}
 		}
