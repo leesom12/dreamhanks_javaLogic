@@ -41,7 +41,7 @@ public class JavaLogic11 {
 				check = 1;			//数字なくて文字が入って来た時再入力してもらえるようにcheckを１に変える
 			}catch(NoSuchElementException e) {
 				System.out.println("４つの整数を入力してください");
-				check = 1;			//２つより少ない数が入って来た時再入力してもらえるようにcheckを１に変える
+				check = 1;			//４つより少ない数が入って来た時再入力してもらえるようにcheckを１に変える
 			}
 			
 		}while(check == 1);		//checkが１なら反復
